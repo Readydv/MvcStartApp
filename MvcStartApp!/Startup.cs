@@ -26,7 +26,7 @@ namespace MvcStartApp
         {
             app.UseRouting();
 
-            app.UseStaticFiles(); // Чтобы обрабатывать статические файлы
+            app.UseStaticFiles(); // Чтобы обрабатывать статические файлы!
 
 
             app.UseMiddleware<LoggingMiddleware>();
