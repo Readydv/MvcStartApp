@@ -1,0 +1,25 @@
+﻿@model List<MvcStartApp.Models.Db.Request>
+
+@{
+    ViewData["Title"] = "История запросов";
+}
+
+<h2>История запросов</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Дата</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var req in Model)
+        {
+            <tr>
+                <td>@req.Date.ToString("g")</td>
+                <td>@req.Url</td>
+            </tr>
+        }
+    </tbody>
+</table>
